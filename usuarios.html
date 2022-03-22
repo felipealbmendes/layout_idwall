@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+      <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+      <link rel="stylesheet" href="css/bootstrap-reboot.rtl.min.css">
+      <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+      <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css">
+      <title>Id Wall :: Usuários</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row column-align-center m-50-0">
+        <div class="col">
+          <header>
+            <h1>Usuários</h1>
+          </header>
+        </div>
+      </div>
+
+      <div class="row">
+        <main class="bg-box-gray">
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-md-2 col-6 fs-20">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-recycle pd-4" viewBox="0 0 16 16">
+                  <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/>
+                </svg>
+                Atualizar
+              </a>
+            </div>
+            <div class="col-md-3 col-6 text-align-end op-50">
+              Última atualização há 2 minutos
+            </div>
+          </div>
+          <div class="row text-align-center">
+            <div class="col-6 col-box-gray pointer active">
+              <div class="title-box-gray">
+                <a href="#lista" title="Selecionar Lista">
+                  Lista de usuários
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-box-gray pointer">
+              <div class="title-box-gray">
+                <a href="#novo_usuario" title="Criar novo usuário">
+                  Novo usuário
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>           
+      </div>
+
+      <div class="row m-50-0">
+        <div class="col-3">
+          <div class="dropdown text-align-center">
+            <button class="btn btn-filter dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Cliente
+            </button>
+            <ul class="dropdown-menu ul-filter text-align-center" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Ifood</a></li>
+              <li><a class="dropdown-item" href="#">C6</a></li>
+              <li><a class="dropdown-item" href="#">Nubank</a></li>
+              <li><a class="dropdown-item" href="#">Rappi</a></li>
+              <li><a class="dropdown-item" href="#">Detran</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="dropdown text-align-center">
+            <button class="btn btn-filter dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Acesso
+            </button>
+            <ul class="dropdown-menu ul-filter text-align-center" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+              <li><a class="dropdown-item" href="#">Sim</a></li>
+              <li><a class="dropdown-item" href="#">Não</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="dropdown text-align-center">
+            <button class="btn btn-filter dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Backoffice
+            </button>
+            <ul class="dropdown-menu ul-filter text-align-center" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+              <li><a class="dropdown-item" href="#">Sim</a></li>
+              <li><a class="dropdown-item" href="#">Não</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="dropdown text-align-center">
+            <button class="btn btn-filter dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Id Network
+            </button>
+            <ul class="dropdown-menu ul-filter text-align-center" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+              <li><a class="dropdown-item" href="#">Sim</a></li>
+              <li><a class="dropdown-item" href="#">Não</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-50-0">
+        <div class="col-3 pt-7">
+          <div class="form-check form-switch w-60">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Desativados</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="dropdown text-align-center">
+            <input class="btn-filter input-filter" type="text" name="search" placeholder="Pesquisar">
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-50-0">
+        <main class="bg-box-gray">
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-1 text-align-center title-table pr-30">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sort-up pt-5p float-left" viewBox="0 0 16 16">
+                <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+              </svg>
+              #
+            </div>
+            <div class="col-1 text-align-center vertical-align-center title-table">
+              Cliente
+            </div>
+            <div class="col-2 text-align-center vertical-align-center title-table">
+              Protocolo
+            </div>
+            <div class="col-3 text-align-center vertical-align-center title-table">
+              Email
+            </div>
+            <div class="col-1 text-align-center vertical-align-center title-table">
+              Acesso
+            </div>
+            <div class="col-1 text-align-center vertical-align-center title-table">
+              Backoffice
+            </div>
+            <div class="col-1 text-align-center vertical-align-center title-table">
+              Id Network
+            </div>
+            <div class="col-2 text-align-center vertical-align-center title-table">
+              Ação
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5 list-odd">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                242
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Ifood
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                0487
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@ifood.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                248
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Uber Eats
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                0512
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@ubereats.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5 list-odd">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                252
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                C6
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                0598
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@c6.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                268
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Nubank
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                0637
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@nubank.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5 list-odd">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                396
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Next
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                1092
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@next.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                477
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Inter
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                1164
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@inter.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5 list-odd">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                588
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Chevrolet
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                1266
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@chevrolet.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                734
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Volkswagen
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                1444
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@volkswagen.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-between border-bottom-gray p-10-5 list-odd">
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                987
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Ambev
+              </a>
+            </div>
+            <div class="col-2 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                1977
+              </a>
+            </div>
+            <div class="col-3 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                atendimento@ambev.com.br
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Sim
+              </a>
+            </div>
+            <div class="col-1 text-align-center vertical-align-center">
+              <a href="#" title="Visualizar">
+                Não
+              </a>
+            </div>
+            <div class="col-2 text-align-center">
+              <a href="#" title="Visualizar">
+                <button type="button" class="btn btn-id-wall">Logar</button>
+              </a>
+            </div>
+          </div>
+        </main>           
+      </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.esm.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
